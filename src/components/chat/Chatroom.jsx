@@ -8,7 +8,7 @@ export default function Chatroom({conversation, currentUser}) {
 
     useEffect(() =>{ 
         let getUser = async () => {
-            await fetch(`http://localhost:4000/user/profile/${friendId}`).then(res => res.json()).then(friend => {
+            await fetch(`https://chat-server-ohlw.onrender.com/user/profile/${friendId}`).then(res => res.json()).then(friend => {
                 setUser(friend)
             });
         };

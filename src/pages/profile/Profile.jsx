@@ -10,6 +10,7 @@ export default function Profile() {
     const [isModalFille, setIsModalFilled] = useState(false);
     let token = localStorage.accessToken;
     let userName = `${currentUser.firstName} ${currentUser.lastName}`;
+    // console.log(currentUser._id)
 
     useEffect(() => {
         profile();

@@ -8,7 +8,7 @@ export default function ChatBanner({activeChat, myId}) {
 
     useEffect(() =>{ 
         let getUser = async () => {
-            fetch(`http://localhost:4000/user/profile/${friendId}`).then(res => res.json()).then(friend => {
+            fetch(`https://chat-server-ohlw.onrender.com/user/profile/${friendId}`).then(res => res.json()).then(friend => {
                 setCurrentChat(friend)
             });
         };       
